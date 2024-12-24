@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .container {
+        margin: 131px;
+        padding: 20px;
+        margin-inline: 566px;
+        line-height: 50px;
+        background-image: url("tripbody.jpg");
+        color: white;
+    }
+
+    lable {
+        width: 100px;
+        display: inline-block;
+    }
+
+    .button {
+        color: black;
+        display: inline-block;
+        width: 100px;
+        margin: 30px;
+    }
+</style>
+<form action="form.php">
+
+    <body>
+        <div class="container">
+            <h1><u>Trip Application Form</u></h1>
+            <lable>Name:</lable>
+            <input type="text" class="name" placeholder="Enter your name"><br>
+            <lable>Father's Name:</lable>
+            <input type="text" class="fathername" placeholder="Enter Father's Name"><br>
+            <lable>Mob.No:</lable>
+            <input type="number" class="phone" placeholder="Enter Mobile Number"><br>
+            <lable>Email:</lable>
+            <input type="email" class="email" placeholder="Enter Email Id"><br>
+            <lable>Gender:</lable>
+            <input type="radio" section="gender" name="gender" id="sectionida">Male
+            <input type="radio" section="gender" name="gender" id="sectionidb">Female
+            <input type="radio" section="gender" name="gender" id="sectionidc">Other<br>
+            <input type="submit" value="Submit" class="button">
+            <input type="reset" value="Reset" class="button">
+        </div>
+    </body>
+</form>
+
+</html>

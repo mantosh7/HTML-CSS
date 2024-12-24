@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+</head>
+<style>
+    
+    .container{
+        width:450px;
+        border: 2px solid black;
+        display:flex;
+        background-color: antiquewhite;
+        margin:10px;
+        padding:2px;
+    }
+    #box1{
+            width:47%;
+        background-color: rgb(41, 88, 117);
+        border:2px solid black;
+        margin:3px;
+        padding:2px;
+        display:flex;
+        flex-direction: column;
+    }
+    #box2{
+        width:47%;
+        border:2px solid black;
+        background-color: yellow;
+        margin:3px;
+        padding:2px;
+    }
+    p{
+        border:2px solid rgb(162, 16, 16);
+        color:black;
+    }
+    img{
+        height:170px;
+        width:200px;
+    }
+    @media (min-width:640px){
+        .container{
+            flex-direction: row;
+        }
+    }
+    @media (max-width:640px){
+        .container{
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="box1">
+            <p>Item 1</p>
+            <p>Item 2</p>
+        </div>
+        <div id="box2">
+            <img src="lakeimage.jpg" alt="Lake Image">
+        </div>
+    </div>
+</body>
+</html>

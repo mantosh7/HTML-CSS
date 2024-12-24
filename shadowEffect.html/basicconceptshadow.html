@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        height: 600px;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        height:250px;
+        width:300px;
+        background-color: antiquewhite;
+        border: 2px solid black;
+        text-align: center;
+        box-shadow: 4px 10px 5px 2px black; /* x-offset y-offest blur-radius spread-radius color */
+    }
+    #head{
+        text-shadow: 4px 4px 1px white; /* x-offset y-offest blur-radius  color */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2 id="head">Welcome to Coding World</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aliquid exercitationem fugiat similique
+                obcaecati dolore iusto culpa, blanditiis dignissimos. Beatae nostrum aspernatur quia natus repellat?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

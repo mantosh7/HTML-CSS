@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <section id="notice-board" class="theme-section">
+        <h2 class="section-title">Notice Board</h2>
+
+        <!-- Notice Section -->
+        <div class="notice-item">
+            <img src="noticeimage.jpg" alt="Notice Image" class="notice-img">
+            <div class="notice-actions">
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <button class="comment-btn" onclick="toggleComments(this)">Comment</button>
+                <a href="#" class="view-link">View Link</a>
+            </div>
+            <div class="comments-section hidden">
+                <textarea placeholder="Write a comment..."></textarea>
+                <button class="submit-comment">Submit</button>
+            </div>
+        </div>
+
+        <!-- Upcoming Events Section -->
+        <div class="notice-item">
+            <img src="eventposter.jpg" alt="Event Poster" class="notice-img">
+            <div class="notice-actions">
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <button class="comment-btn" onclick="toggleComments(this)">Comment</button>
+                <a href="#" class="view-link">View Link</a>
+            </div>
+            <div class="comments-section hidden">
+                <textarea placeholder="Write a comment..."></textarea>
+                <button class="submit-comment">Submit</button>
+            </div>
+        </div>
+
+        <!-- Recently Uploaded Section -->
+        <div class="notice-item">
+            <img src="recentlyuploaded.jpg" alt="Uploaded Video" class="notice-img">
+            <div class="notice-actions">
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <button class="comment-btn" onclick="toggleComments(this)">Comment</button>
+                <a href="https://youtu.be/5tN0ZxKg2xQ?si=iFmSmCYLvy5PisIZ" class="view-link">View Link</a>
+            </div>
+            <div class="comments-section hidden">
+                <textarea placeholder="Write a comment..."></textarea>
+                <button class="submit-comment">Submit</button>
+            </div>
+        </div>
+
+        <!-- Progress Section -->
+        <div class="progress-section">
+            <h3>Your Progress</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Properties</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(53, 49, 49);
+        border: 2px solid white;
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr); /* grid-template-column is used to decide the width of each column */
+        grid-template-rows: repeat(4, 1fr); /* grid-template-row is used to decide the height of each row */
+        
+    }
+
+    .item {
+        background-color: aquamarine;
+        border: 5px solid black;
+        width: 100px;
+        height: 100px;
+        /* justify-self: center; horizontally shift the items in centre of the div  */
+         /* align-self: start; vertically shift the items at top of the div */
+        place-self: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+</body>
+
+</html>

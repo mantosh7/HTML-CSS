@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: bisque;
+        border: 7px solid black;
+    }
+
+    .box1 {
+        height: 80px;
+        width: 201px;
+        background-color: brown;
+        border: 2px solid black;
+        margin: 22px;
+        position: relative;
+        border-radius: 20px;
+        animation-name: RightMovement;   /*name of the animation */
+        animation-duration: 5s;   /* time taken for the animation */
+        animation-delay: 0.5s;    /* time after which animation start */
+        animation-iteration-count:infinite;   /* no.of times animation repeat */
+        animation-timing-function: linear;   /* speed of animation */
+         animation-direction: alternate;  /* travels in the keyframe direction then reverse the path */
+       /* animation-fill-mode: forwards; */   /*fill mode --> keyframe start hone se phle or khtm hone ke beech me kya karna hai (e.g:forwards = end me jaa kr ruk jayega wahi par) */
+       
+    }
+
+    @keyframes RightMovement {
+        from {
+            top: 0px;
+            left: 0px;
+        }
+
+        to {
+            top: 0px;
+            left: 1250px;
+        }
+    }
+    .box2{
+        height: 80px;
+        width: 201px;
+        background-color: yellow;
+        border: 2px solid black;
+        margin: 22px;
+        position: relative;
+        border-radius: 20px;
+         /* @keyframes duration | easing-function | delay |
+        iteration-count | direction | fill-mode | play-state | name */
+        animation: 5s linear 0.5s infinite alternate none running LeftMovement; 
+    }
+    @keyframes LeftMovement {
+        from {
+            top: 380px;
+            left: 1250px;
+        }
+
+        to {
+            top: 380px;
+            left: 0px;
+        }
+    }
+    .circle{
+        height: 60px;
+        width: 61px;
+        background-color: rgb(49, 71, 136);
+        border: 2px solid black;
+        margin: 22px;
+        position: relative;
+        border-radius: 62px;
+        animation: 5s linear 0.5s infinite alternate none running circleMovement;
+    }
+    @keyframes circleMovement {
+        0%{
+            top: 1%;
+            left:5%;
+        }
+        30%{
+            top:5%;
+            left:90%;
+        }
+        60%{
+            top:45%;
+            left:10%;
+        }
+        100%{
+            top:50%;
+            left:90%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="circle"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>

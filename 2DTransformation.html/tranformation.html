@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2px Transformation</title>
+</head>
+<style>
+    .container{
+        height:100vh;
+        width:100vw;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        height:200px;
+        width:200px;
+        background-color: aqua;
+        border: 2px solid black;  
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: all;
+        transition-duration: 3s;
+        transition-timing-function:linear;
+        /* transition-duration: 5s; */
+    }
+    p{
+        font-size: 20px;
+    }
+    .box:hover{
+        /* transform: rotate(360deg);  It will rotate the box 360 degree clockwise */
+        /* transform:scale(1.5);   scale(n) will increase or decrease the size of the box n times the original size  */
+         /* transform: skew(25deg);  skew(ndeg) will tilt  the box n degree */
+         transform: translate(200px,200px); /* It will translate the box in x and y direction */
+        background-color: rgb(213, 75, 60);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Mantosh Kumar</p>
+        </div>
+    </div>
+</body>
+</html>

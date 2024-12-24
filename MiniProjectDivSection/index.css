@@ -1,0 +1,89 @@
+/* Campus Connect Theme Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #10182f;
+    color: #ffffff;
+  }
+  
+  .theme-section {
+    padding: 20px;
+    background-color: #1c2541;
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffd700;
+  }
+  
+  .notice-item {
+    margin-bottom: 20px;
+  }
+  
+  .notice-img {
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .notice-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .eventimg {
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .like-btn, .comment-btn, .view-link {
+    background-color: #ffd700;
+    color: #10182f;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .comments-section {
+    margin-top: 10px;
+  }
+  
+  .comments-section textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  .comments-section.hidden {
+    display: none;
+  }
+  
+  .progress-section {
+    margin-top: 20px;
+  }
+  
+  .progress-bar-container {
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-bar {
+    width: 60%;
+    height: 100%;
+    background-color: #ffd700;
+  }
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Connect - Notice Board</title>
+  <link rel="stylesheet" href="index2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <section id="notice-board" class="theme-section">
+    <h2 class="section-title">Notice Board</h2>
+
+    <!-- Notice Item 1 -->
+    <div class="notice-item">
+      <img src="noticeimage.jpg" alt="Notice Image" class="notice-img">
+      <div class="notice-actions">
+        <button class="action-btn like-btn" onclick="toggleLike(this)">
+          <i class="fas fa-thumbs-up"></i>
+        </button>
+        <button class="action-btn comment-btn" onclick="toggleComments(this)">
+          <i class="fas fa-comment"></i>
+        </button>
+        <a href="#" class="action-btn view-link">
+          <i class="fas fa-link"></i>
+        </a>
+      </div>
+      <div class="comments-section hidden">
+        <textarea placeholder="Write a comment..."></textarea>
+        <button class="submit-comment">Submit</button>
+      </div>
+    </div>
+
+    <!-- Notice Item 2 -->
+    <div class="notice-item">
+      <img src="eventposter.jpg" alt="Event Poster" class="notice-img">
+      <div class="notice-actions">
+        <button class="action-btn like-btn" onclick="toggleLike(this)">
+          <i class="fas fa-thumbs-up"></i>
+        </button>
+        <button class="action-btn comment-btn" onclick="toggleComments(this)">
+          <i class="fas fa-comment"></i>
+        </button>
+        <a href="#" class="action-btn view-link">
+          <i class="fas fa-link"></i>
+        </a>
+      </div>
+      <div class="comments-section hidden">
+        <textarea placeholder="Write a comment..."></textarea>
+        <button class="submit-comment">Submit</button>
+      </div>
+    </div>
+
+    <!-- Notice Item 3 -->
+    <div class="notice-item">
+        <img src="recentlyuploaded.jpg" alt="Event Poster" class="notice-img">
+        <div class="notice-actions">
+          <button class="action-btn like-btn" onclick="toggleLike(this)">
+            <i class="fas fa-thumbs-up"></i>
+          </button>
+          <button class="action-btn comment-btn" onclick="toggleComments(this)">
+            <i class="fas fa-comment"></i>
+          </button>
+          <a href="https://youtu.be/5tN0ZxKg2xQ?si=UhG5prFwnbgtVtjp" class="action-btn view-link">
+            <i class="fas fa-link"></i>
+          </a>
+        </div>
+        <div class="comments-section hidden">
+          <textarea placeholder="Write a comment..."></textarea>
+          <button class="submit-comment">Submit</button>
+        </div>
+      </div>
+
+    <!-- Progress Section -->
+    <div class="progress-section">
+      <h3>Your Progress</h3>
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="index2.js"></script>
+</body>
+</html>

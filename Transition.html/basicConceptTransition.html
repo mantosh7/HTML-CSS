@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            box-sizing: border-box;
+        }
+        .container{
+            height:400px;
+            width:400px;
+            background-color: aqua;
+            border: 2px solid black;
+            transition-property: all;
+            transition-timing-function: linear;
+            transition-duration: 2s;
+        }
+        .container:hover{
+            width:1200px;
+            height:600px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Menu Bar</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        background-image: url("laptopwallpaper.jpg");
+        background-size: cover;
+        border: 2px solid black;
+    }
+
+    .check {
+        display: none;
+    }
+
+    .checkbox, #check{
+        color: white;
+        margin: 0px 26px;
+        position: relative;
+        top: 15px;
+        font-size: x-large;
+
+    }
+
+    .slidebar {
+        height: 650px;
+        width: 289px;
+        backdrop-filter: blur(50px);
+        border: 2px solid white;
+        position: relative;
+        top: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-left: -291px;
+        cursor: pointer;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    .dashboard,
+    .search,
+    .profile,
+    .notification,
+    .download,
+    .setting {
+        width: 100%;
+        height: 70px;
+        color: white;
+        padding: 3px 0px;
+        font-size: larger;
+        display: block;
+        /* margin: 13px 0px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dashboard i,
+    .search i,
+    .profile i,
+    .notification i,
+    .download i,
+    .setting i {
+        margin-right: 10px;
+    }
+
+    .socialmedia {
+        width: 100%;
+        height: 55px;
+        /* border: 2px solid white; */
+
+        position: relative;
+        top: 130px;
+        padding-left: 25px;
+        /* display: flex;
+        justify-content: space-evenly; */
+    }
+
+    .facebook,
+    .twitter,
+    .instagram {
+        /* width: 33%;
+        height: 55px;  */
+        color: white;
+        /* border: 2px solid white; */
+        padding: 16px 5px;
+        margin: 0px 4px;
+        font-size: small;
+        display: inline-block;
+    }
+
+    .facebook i,
+    .twitter i,
+    .instagram i {
+        display: inline-block;
+        font-size: small;
+    }
+
+    .dashboard:hover,
+    .search:hover,
+    .profile:hover,
+    .notification:hover,
+    .download:hover,
+    .setting:hover {
+        background-color: rgb(93, 90, 90);
+        color: white;
+        /* transition-timing-function: linear; */
+        padding-left: 15px;
+    }
+    /* #check{
+        display: none;
+    } */
+
+    #check:checked~ .slidebar {
+            height: 650px;
+            width: 289px;
+            backdrop-filter: blur(50px);
+            border: 2px solid white;
+            position: relative;
+            top: 30px;
+            display: flex;
+            flex-direction: column; 
+            margin-left: 0px;
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <lable for="checkbox" class="checkbox">
+            <i class="fas fa-bars"></i>
+        </lable>
+        <div class="slidebar">
+            <div class="dashboard">
+                <i class="fas fa-home"></i>
+                Dashboard
+            </div>
+            <div class="search">
+                <i class="fas fa-search"></i>
+                Search
+            </div>
+            <div class="profile">
+                <i class="fas fa-user"></i>
+                Profile
+            </div>
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+                Notification
+            </div>
+            <div class="download">
+                <i class="fas fa-download"></i>
+                Downloads
+            </div>
+            <div class="setting">
+                <i class="fas fa-gears"></i>
+                Setting
+            </div>
+            <div class="socialmedia">
+                <div class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                    facebook
+                </div>
+                <div class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                    twitter
+                </div>
+                <div class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    instagram
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
